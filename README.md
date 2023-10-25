@@ -2,6 +2,7 @@
 This is DEV Repository for widget_db dev instance.
 DB      : widget_db
 SCHEMA  : hr_base
+
 Tables: 1. hr_base.widget_dept_base
         2. hr_base.widget_emp_base
         3. hr_base.log_table
