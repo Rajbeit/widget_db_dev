@@ -2,7 +2,7 @@
 DECLARE
   v_result CLOB;
 BEGIN
-  v_result := hr_base.emp_report_pkg.get_emp_report(10);  -- Replace 10 with a valid department ID
+  v_result := hr_base.emp_report_pkg.get_emp_report(90011);  -- Replace 10 with a valid department ID
   DBMS_OUTPUT.PUT_LINE(v_result);
 EXCEPTION
   WHEN OTHERS THEN
@@ -14,7 +14,7 @@ END;
 DECLARE
   v_result CLOB;
 BEGIN
-  v_result := hr_base.emp_report_pkg.get_dept_total_salary(20);  -- Replace 20 with a valid department ID
+  v_result := hr_base.emp_report_pkg.get_dept_total_salary(2);  -- Replace 20 with a valid department ID
   DBMS_OUTPUT.PUT_LINE(v_result);
 EXCEPTION
   WHEN OTHERS THEN
@@ -26,7 +26,7 @@ END;
 DECLARE
   v_result CLOB;
 BEGIN
-  v_result := hr_base.emp_report_pkg.get_employee_salary(100);  -- Replace 100 with a valid employee ID
+  v_result := hr_base.emp_report_pkg.get_employee_salary(90011);  -- Replace 100 with a valid employee ID
   DBMS_OUTPUT.PUT_LINE(v_result);
 EXCEPTION
   WHEN OTHERS THEN
