@@ -1,0 +1,74 @@
+Build and run instructions:
+
+Assumption: 1. widget_db is created.
+			2. hr_base schema is created in the DB for all the required elements creation.
+
+
+Windows:
+
+1. Install Oracle SQL Developer.
+
+2. Run Oracle SQL Developer: After installation, you can start Oracle SQL Developer and connect to widget_db.
+
+3. Use SYS or hr_base to connect to DB.
+
+4. Execute Scripts: Open a new worksheet in Oracle SQL Developer, and execute the scripts in following order from the widget_db repository (https://github.com/Rajbeit/widget_db_dev):
+
+4.1 Table Creation (Please execute in the given order only becuase of dependency):
+
+	4.1.1 https://github.com/Rajbeit/widget_db_dev/blob/main/table_creation/hr_base.log_table.sql
+	4.1.2 https://github.com/Rajbeit/widget_db_dev/blob/main/table_creation/hr_base.widget_dept_base.sql
+	4.1.3 https://github.com/Rajbeit/widget_db_dev/blob/main/table_creation/hr_base.widget_emp_base.sql
+
+4.2 Data Upload (Please execute in the given order only becuase of dependency):
+	4.2.1 https://github.com/Rajbeit/widget_db_dev/blob/main/data_upload/INSERT_hr_base.widget_dept_base.sql
+	4.2.2 https://github.com/Rajbeit/widget_db_dev/blob/main/data_upload/INSERT_hr_base.widget_emp_base.sql
+
+4.3 Packages (these can be executed in any order)
+	4.3.1 https://github.com/Rajbeit/widget_db_dev/blob/main/packages/hr_base.emp_report_pkg.sql
+	4.3.2 https://github.com/Rajbeit/widget_db_dev/blob/main/packages/hr_base.manage_salary_pkg.sql
+	4.3.3 https://github.com/Rajbeit/widget_db_dev/blob/main/packages/hr_base.widget_emp_pkg.sql
+
+Note: Please share the log for above eecution.
+
+5. Test - Run the following scripts and share the results.
+
+5.1 https://github.com/Rajbeit/widget_db_dev/blob/main/devtest/test_hr_base.emp_report_pkg.sql
+5.2 https://github.com/Rajbeit/widget_db_dev/blob/main/devtest/test_hr_base.manage_salary_pkg.sql
+5.3 https://github.com/Rajbeit/widget_db_dev/blob/main/devtest/test_hr_base.widget_emp_pkg.sql
+
+6. End the connection.
+
+Mac:
+
+1. Install Docker.
+2. Pull Oracle Database Docker Image and Run Oracle Database in Docker to connect to widget_db. 
+
+3. Use SYS or hr_base to connect to DB.
+
+4. Execute Scripts: Open a new worksheet in Oracle SQL Developer, and execute the scripts in following order from the widget_db repository (https://github.com/Rajbeit/widget_db_dev):
+
+4.1 Table Creation (Please execute in the given order only becuase of dependency):
+
+	4.1.1 https://github.com/Rajbeit/widget_db_dev/blob/main/table_creation/hr_base.log_table.sql
+	4.1.2 https://github.com/Rajbeit/widget_db_dev/blob/main/table_creation/hr_base.widget_dept_base.sql
+	4.1.3 https://github.com/Rajbeit/widget_db_dev/blob/main/table_creation/hr_base.widget_emp_base.sql
+
+4.2 Data Upload (Please execute in the given order only becuase of dependency):
+	4.2.1 https://github.com/Rajbeit/widget_db_dev/blob/main/data_upload/INSERT_hr_base.widget_dept_base.sql
+	4.2.2 https://github.com/Rajbeit/widget_db_dev/blob/main/data_upload/INSERT_hr_base.widget_emp_base.sql
+
+4.3 Packages (these can be executed in any order)
+	4.3.1 https://github.com/Rajbeit/widget_db_dev/blob/main/packages/hr_base.emp_report_pkg.sql
+	4.3.2 https://github.com/Rajbeit/widget_db_dev/blob/main/packages/hr_base.manage_salary_pkg.sql
+	4.3.3 https://github.com/Rajbeit/widget_db_dev/blob/main/packages/hr_base.widget_emp_pkg.sql
+
+Note: Please share the log for above eecution.
+
+5. Test - Run the following scripts and share the results.
+
+5.1 https://github.com/Rajbeit/widget_db_dev/blob/main/devtest/test_hr_base.emp_report_pkg.sql
+5.2 https://github.com/Rajbeit/widget_db_dev/blob/main/devtest/test_hr_base.manage_salary_pkg.sql
+5.3 https://github.com/Rajbeit/widget_db_dev/blob/main/devtest/test_hr_base.widget_emp_pkg.sql
+
+6. End the connection.
