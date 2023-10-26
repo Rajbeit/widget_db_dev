@@ -1,10 +1,10 @@
 /*------------------------------------------------------------------*/
-/*-- This package contains procedures to manage employee salaries 	*/
-/*-- Required Input:   												*/
-/*-- 				1. EMP_ID -- Employee ID						*/
-/*-- 				2. p_percentage - Precentage Increase           */
-/*-- Cretaed by 	: Raj Arora							            */
-/*-- Creation Date	: Oct-2023										*/
+/*-- This package contains procedures to manage employee salaries   */
+/*-- Required Input:   						    */
+/*-- 			1. EMP_ID -- Employee ID	    	    */
+/*-- 			2. p_percentage - Precentage Increase       */
+/*-- Cretaed by 	: Raj Arora				    */
+/*-- Creation Date	: Oct-2023				    */
 /*------------------------------------------------------------------*/
 CREATE OR REPLACE PACKAGE hr_base.manage_salary_pkg AS
 		  -- Procedure to increase the salary of an employee
@@ -66,7 +66,7 @@ END increase_salary;
 
 
 /*------------------------------------------------------------------*/
-/*-- decrease_salary Proceedure									 	*/
+/*-- decrease_salary Proceedure					    */
 /*------------------------------------------------------------------*/
 PROCEDURE decrease_salary (
 	  p_emp_id IN hr_base.widget_emp_base.emp_id%TYPE,
