@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------*/
-/*-- This package contains procedures to manage employee 		 	*/
-/*-- Cretaed by 	: Raj Arora							            */
-/*-- Creation Date	: Oct-2023										*/
+/*-- This package contains procedures to manage employee            */
+/*-- Cretaed by 	: Raj Arora				    */
+/*-- Creation Date	: Oct-2023				    */
 /*------------------------------------------------------------------*/
 CREATE OR REPLACE PACKAGE hr_base.widget_emp_pkg AS
   -- Procedure to add a new employee
@@ -26,7 +26,7 @@ END widget_emp_pkg;
 
 CREATE OR REPLACE PACKAGE BODY widget_emp_pkg AS
 /*------------------------------------------------------------------*/
-/*-- add_employee Procedure										 	*/
+/*-- add_employee Procedure					    */
 /*------------------------------------------------------------------*/
   PROCEDURE add_employee (
 		p_emp_id IN hr_base.widget_emp_base.emp_id%TYPE,
@@ -86,7 +86,7 @@ CREATE OR REPLACE PACKAGE BODY widget_emp_pkg AS
   END add_employee;
 
 /*------------------------------------------------------------------*/
-/*-- transfer_employee Procedure										 	*/
+/*-- transfer_employee Procedure				    */
 /*------------------------------------------------------------------*/ 
   PROCEDURE transfer_employee (
 		p_emp_id IN hr_base.widget_emp_base.emp_id%TYPE,
